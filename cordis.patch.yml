@@ -1,0 +1,8 @@
+# Session-tree bundle patch: one Loader row.
+#
+# Host half registers the `branchTree` session projection; the browser half
+# ships through package.json `exports["./client"]` and the `dsh.client`
+# declaration.
+- insert:
+    - id: dsh-session-helix
+      name: "dsh-session-helix"

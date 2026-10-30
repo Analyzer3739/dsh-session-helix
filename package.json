@@ -1,0 +1,53 @@
+{
+  "name": "dsh-session-helix",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Turn-level branch tree and draft board for DeepSeek Harness session forks.",
+  "license": "MIT",
+  "author": "Analyzer3739",
+  "homepage": "https://github.com/Analyzer3739/dsh-session-helix#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Analyzer3739/dsh-session-helix.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Analyzer3739/dsh-session-helix/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "session",
+    "fork",
+    "branch",
+    "tree",
+    "draft"
+  ],
+  "engines": {
+    "dsh": ">=0.2.2-alpha.2 <0.3.0-0",
+    "node": ">=22.19.0"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  }
+}

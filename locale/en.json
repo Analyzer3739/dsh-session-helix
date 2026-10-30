@@ -1,0 +1,8 @@
+{
+  "meta": {
+    "title": "Branch tree",
+    "description": "Turn-level branch tree for session forks, with a grouped draft board; a conversation tab, a workspace panel and a right-sidebar board."
+  },
+  "view": { "label": "Branches" },
+  "panel": { "label": "Branches" }
+}
